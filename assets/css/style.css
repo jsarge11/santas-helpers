@@ -6,8 +6,15 @@
 html, body {
     height: 100%;
     width: 100%;
+    margin: 0;
 }
 
+.glow {
+    text-shadow: white 0px 0px 10px;
+}
+.white {
+    color: white;
+}
 .card {
     height: 200px;
     width: 330px;
@@ -39,12 +46,15 @@ html, body {
     position: relative;
 }
 
-.title {
+header {
     position: absolute;
-    text-shadow: white 0px 0px 10px;
-    font-size: 48px;
     top: 30%;
-    color: white;
+}
+.title {
+    font-size: 48px;
+}
+.subtitle {
+    font-size: 32px;
 }
 
 footer {
@@ -55,6 +65,5 @@ footer {
 i {
     margin-top: 50%;
     color: #42413F;
-    text-shadow: white 0px 0px 10px;
     font-size: 3em;
 }
