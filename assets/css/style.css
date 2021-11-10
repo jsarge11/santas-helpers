@@ -12,9 +12,11 @@ html, body {
 .glow {
     text-shadow: white 0px 0px 10px;
 }
+
 .white {
     color: white;
 }
+
 .card {
     height: 200px;
     width: 330px;
@@ -23,12 +25,11 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 4px -17px rgba(0,0,0,0); 
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 4px -17px rgba(0,0,0,0);
     transition: all .1s ease-in-out;
     cursor: pointer;
     border-radius: 12px;
 }
+
 .google-form-background {
     position: fixed;
     top: 0;
@@ -42,6 +43,7 @@ html, body {
     overflow-y: scroll;
     z-index: 10;
 }
+
 .google-form-scroll {
     position: absolute;
     background: white;
@@ -50,6 +52,7 @@ html, body {
     border: 2px solid grey;
     border-radius: 12px;
 }
+
 .close {
     position: absolute;
     right: -36px;
@@ -58,34 +61,50 @@ html, body {
     font-size: 2rem;
     cursor: pointer;
 }
+
 .close:hover {
     color: grey;
 }
+
 .card:hover {
     transform: scale(1.1);
     transition: all .1s ease-in-out;
 }
+
 .card-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     height: 118%;
 }
+
 .main {
     height: 80%;
-    background: url('../images/tree.jpg');
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.3), 
+        rgba(0, 0, 0, 0.3)
+      ),
+        url('../images/tree.jpg');
     background-size: cover;
     padding: 0 10%;
     position: relative;
+}
+
+.modal {
+    transition: all .5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
 }
 
 header {
     position: absolute;
     top: 25%;
 }
+
 .title {
     font-size: 4rem;
 }
+
 .subtitle {
     font-size: 1.25rem;
     width: 75%;
@@ -100,4 +119,9 @@ span i {
     margin-top: 50%;
     color: #42413F;
     font-size: 3em;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 4px -17px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 4px -17px rgba(0,0,0,0);
 }

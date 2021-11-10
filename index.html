@@ -12,19 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="nominate" class="google-form-background" style="visibility: hidden;">
-        <div class="google-form-scroll">
+    <div id="nominate" class="google-form-background modal">
+        <div class="google-form-scroll shadow">
             <i class="close fas fa-times" onclick="hideModal('nominate')"></i>
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc070wKpCukk4b0SBcwDHUC9JklTmIJ_H8i5h7BjxZRInKLeA/viewform?embedded=true" height="95%" width="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </div>
-    <div id="donate" class="google-form-background" style="visibility: hidden;">
-        <div class="google-form-scroll">
+    <div id="donate" class="google-form-background modal">
+        <div class="google-form-scroll shadow">
             <i class="close fas fa-times" onclick="hideModal('donate')"></i>
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeQry2trA1EXBoVUtleTTL78YPaFDxh_BuZvd2hlWmbwQD52A/viewform?embedded=true" height="95%" width="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </div>
-    <div class="main">
+    <div class="main dim">
         <header>
             <h1 class="title glow white">Hope & Halos</h1>
             <p class="subtitle glow white">Tis the season of giving, and that is what we aim to do! Hard times have fallen on so many and we want to do everything we can to bring hope to those who need it. in 2020, because of your generous support, we were able to provide Christmas to 50 families across Utah! This year we are hoping to double that.</p> 
@@ -32,7 +32,7 @@
             <p class="subtitle glow white">It is because of your generous giving that this is even possible. If you are in a position to help, please take a look at the different ways we could use your support! These include sponsoring a family, monetary donations, and wrapping or delivering gifts.</p> 
         </header>
         <div class="card-wrapper">
-            <button onclick="showModal('nominate')" class="card">
+            <button onclick="showModal('nominate')" class="card shadow">
                 <span>
                     <i class="fas fa-gift glow"></i>
                 </span>
@@ -40,7 +40,7 @@
                     Nominate a Family
                 </h1>
             </button>
-            <button class="card">
+            <button class="card shadow">
                 <span>
                     <i class="fas fa-snowflake glow"></i>
                 </span>
@@ -48,7 +48,7 @@
                     Donate
                 </h1>
             </button>
-            <button onclick="showModal('donate')" class="card">
+            <button onclick="showModal('donate')" class="card shadow">
                
                 <span>
                     <i class="fas fa-sleigh glow"></i>
@@ -57,7 +57,7 @@
                     Ways to Help
                 </h1>
             </button>
-            <button class="card">
+            <button class="card shadow">
                 <span>
                     <i class="fas fa-holly-berry glow"></i>
                 </span>
